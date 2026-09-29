@@ -48,4 +48,4 @@ COPY . .
 EXPOSE 8000
 
 # Run the application.
-CMD gunicorn '.venv.lib.python3.14.site-packages.werkzeug.wsgi' --bind=0.0.0.0:8000
+CMD gunicorn 'flasky_.hello:app' --bind=0.0.0.0:8000
